@@ -1,15 +1,17 @@
 /* grids del index */
 
 .contenedor-cards {
-    height: 1400px;
-    gap: 80px;
+    height: 1200px;
+    gap: 40px;
 
     display: grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 100vh;
+
+    grid-template-rows: repeat(2, 1fr);
 
     margin: 40px auto;
-    padding: 0 20px;
+    padding: 0 40px;
 
     justify-content: center;
 
@@ -24,5 +26,6 @@
 .peli4 { grid-area: peli4; }
 .peli5 { grid-area: peli5; }
 .peli6 { grid-area: peli6; }
+
 
 /* FIN grids del index */
