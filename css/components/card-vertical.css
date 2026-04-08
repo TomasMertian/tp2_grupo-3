@@ -1,13 +1,5 @@
 /* CARD index - vertical*/
 
-.card-vertical {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-primario); 
-    border-radius: 12px;
-    overflow: hidden; 
-}
-
 .card-imagen {
     width: 100%;
     height: 352px; 
@@ -22,6 +14,7 @@
     padding: 20px; 
     flex-grow: 1; 
     color: var(--color-texto);
+    background-color: var(--color-primario);
 }
 
 .card-titulo {
