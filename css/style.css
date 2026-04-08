@@ -1,4 +1,6 @@
+@import url(.css/components/nav.css);
 @import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
+
 
 /* Paletas de colores que pueden usar: */
 
@@ -31,3 +33,4 @@
   --color-texto: #ffffff;
   --color-texto-suave: #b3b3b3;
 }*/
+/* INICIO archivo ESTRENOS*/
