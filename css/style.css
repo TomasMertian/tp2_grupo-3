@@ -47,33 +47,3 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* INICIO INDEX.HTML*/
-
-.page-index{
-  background-color: var(--color-superficie);
-}
-
-.cartelera {
-  padding-top: 32px;
-}
-
-.cartelera h2 {
-  text-align: center;
-  font-size: 64px;
-  margin-bottom: 8px;
-  background-color: var(--color-superficie);
-  color: var(--color-texto);
-}
-
-@media only screen and (max-width: 600px) {
-  .contenedor-cards {
-    grid-template-areas:
-      "box-1 box-2"
-      "box-3 box-2"
-      "box-3 box-4"
-      "box-5 box-4";
-  }
-}
-
-/* FIN INDEX.HTML*/
