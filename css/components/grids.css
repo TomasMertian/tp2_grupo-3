@@ -1,11 +1,11 @@
 /* grids del index */
 
 .contenedor-cards {
-    height: 1000px;
+    height: 1400px;
     gap: 80px;
 
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 400px 400px 400px;
     grid-template-rows: auto auto auto;
 
     margin: 40px auto;
