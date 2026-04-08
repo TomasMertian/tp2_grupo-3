@@ -1,4 +1,12 @@
-/* Título y logo */
+/* Titulo y logo */
+.header-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: var(--color-fondo);
+}
+
 .header-logo {
     display: flex;
     align-items: center;

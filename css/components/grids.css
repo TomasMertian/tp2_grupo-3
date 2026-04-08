@@ -1,18 +1,21 @@
 /* grids del index */
 
 .contenedor-cards {
-    gap: 38px;
+    height: 1000px;
+    gap: 80px;
 
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 200px 200px 200px;
     grid-template-rows: auto auto auto;
+
+    margin: 40px auto;
+    padding: 0 20px;
 
     justify-content: center;
 
     grid-template-areas: 
-        "peli1 peli2"
-        "peli3 peli4"
-        "peli5 peli6";
+        "peli1 peli2 peli3"
+        "peli4 peli5 peli6";
 }
 
 .peli1 { grid-area: peli1; }
