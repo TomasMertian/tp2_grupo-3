@@ -1,0 +1,9 @@
+.footer-index {
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
+    text-align: center;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
