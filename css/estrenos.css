@@ -6,7 +6,6 @@
 @import url(./components/footer.css);
 @import url(./components/grids.css);
 
-
 /* Paletas de colores que pueden usar: */
 
 /* Paleta 1: */
@@ -38,13 +37,14 @@
   --color-texto: #ffffff;
   --color-texto-suave: #b3b3b3;
 }*/
-/* INICIO archivo ESTRENOS*/
-main{
-  background-color: var(--color-texto);
+
+.main{
+  margin: 0;
+  padding: 0;
 }
-.display-content {
-flex: center;
-}
-.grilla-peliculas h1{
+
+.titulo-pagina {
   text-align: center;
+  color: var(--color-primario);
+  margin-bottom: 20px;
 }
