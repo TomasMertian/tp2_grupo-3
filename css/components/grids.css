@@ -1,0 +1,31 @@
+/* grids del index */
+
+.contenedor-cards {
+    height: 1200px;
+    gap: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 100vh;
+
+    grid-template-rows: repeat(2, 1fr);
+
+    margin: 40px auto;
+    padding: 0 40px;
+
+    justify-content: center;
+
+    grid-template-areas: 
+        "peli1 peli2 peli3"
+        "peli4 peli5 peli6";
+}
+
+.peli1 { grid-area: peli1; }
+.peli2 { grid-area: peli2; }
+.peli3 { grid-area: peli3; }
+.peli4 { grid-area: peli4; }
+.peli5 { grid-area: peli5; }
+.peli6 { grid-area: peli6; }
+
+
+/* FIN grids del index */

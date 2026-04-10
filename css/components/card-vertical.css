@@ -1,0 +1,39 @@
+/* CARD index - vertical*/
+
+.card-imagen {
+    width: 100%;
+    height: 352px; 
+    object-fit: cover; 
+    display: block;
+    background-color: var(--color-texto); 
+}
+
+.card-contenido {
+    display: flex;
+    flex-direction: column;
+    padding: 20px; 
+    flex-grow: 1; 
+    color: var(--color-texto);
+    background-color: var(--color-primario);
+}
+
+.card-titulo {
+    font-size: 32px; 
+    margin-bottom: 4px; 
+}
+
+.card-genero {
+    font-size: 24px;
+    opacity: 0.9;
+    padding-top: 8px;
+    margin-bottom: 20px; 
+}
+
+.card-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+    margin-top: auto; 
+}
+
+/* FIN - CARD index - vertical*/
