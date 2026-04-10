@@ -1,9 +1,14 @@
-@import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
 @import url('./components/nav.css');
-@import url('./components/poster.css');
 @import url('./components/button.css');
-@import url('./components/card-horizontal.css');
-@import url('./components/card-vertical.css');
 @import url('./components/footer.css');
-@import url('./components/grids.css');
 @import url('./style.css');
+
+/* -- LAYOUT PRINCIPAL (Flexbox) -- */
+.contenedor-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px); /*Es un centrado (el vh es viewport height) el 100 es para que ocupe toda la pantalla)*/
+    background-color: var(--color-fondo);
+    padding: 32px;
+}
