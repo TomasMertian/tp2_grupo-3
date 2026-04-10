@@ -6,6 +6,7 @@
 @import url('./components/card-vertical.css');
 @import url('./components/footer.css');
 @import url('./components/grids.css');
+@import url("./detalle.css");
 
 /* Paletas de colores que pueden usar: */
 
@@ -48,4 +49,3 @@
   box-sizing: border-box;
 }
 
-@import url("./detalle.css");
