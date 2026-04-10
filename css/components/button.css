@@ -1,0 +1,31 @@
+/* estilo de botones cards index */
+.btn {
+    text-decoration: none;
+    text-align: center;
+    padding: 12px; 
+    border-radius: 8px; 
+    font-weight: bold;
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+.btn-ver-mas {
+    background-color: var(--color-texto);
+    color: var(--color-fondo);
+}
+
+.btn-ver-mas:hover {
+    background-color: var(--color-secundario);
+}
+
+.btn-comprar {
+    background-color: var(--color-fondo); 
+    color: var(--color-texto);
+}
+
+.btn-comprar:hover {
+    background-color: var(--color-texto-suave);
+    color: var(--color-fondo);
+}
+
+/* FIN estilo de botones cards index */
