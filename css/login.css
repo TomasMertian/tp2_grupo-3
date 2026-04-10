@@ -63,6 +63,12 @@
     background-color: rgba(225, 29, 72, 0.05);
 }
 
+.campo-formulario input:placeholder{
+    color: var(--color-texto-suave);
+    opacity: 0.6;
+    font-size: 14px;
+}
+
 .link-registro{
     text-align: center;
     font-size: 14px;
@@ -75,7 +81,7 @@
     font-weight: bold;
 }
 
-/* -- RESPONSIVE --*/
+/* -- RESPONSIVE (cambio de dispositivo)--*/
 
 @media (max-width: 480px) {
     .contenedor-login{
@@ -108,3 +114,4 @@
     background-color: #900c3f; /*Es un color más oscuro cuando se hace click*/
     transform: translateY(0); /*Vuelve a su lugar*/
 }
+
