@@ -62,3 +62,49 @@
     box-shadow: 0 0 8px rgba(225, 29, 72, 0.4);
     background-color: rgba(225, 29, 72, 0.05);
 }
+
+.link-registro{
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-texto-suave);
+}
+
+.link-registro a{
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* -- RESPONSIVE --*/
+
+@media (max-width: 480px) {
+    .contenedor-login{
+        padding: 16px
+    }
+
+    .login-card{
+        padding: 24px;
+    }
+}
+
+/* -- AGREGADOS DE estilos e interacción-- */
+
+.btn-ver-mas{
+    background-color: var(--color-secundario);
+    color: white;
+    transition: all 0.3 ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-ver-mas:hover {
+    background-color: var(--color-primario); /*Al pasar el mouse se tiñe de otro color*/
+    transform: translateY(-2px); /* Hace que cuando se pase el mouse por arriba haga como un pequeño salto hacia arriba*/
+    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3); /*Le da un brillo rosa*/
+}
+
+/*Cuando hago click en el botón*/
+.btn-ver-mas:active{
+    background-color: #900c3f; /*Es un color más oscuro cuando se hace click*/
+    transform: translateY(0); /*Vuelve a su lugar*/
+}
