@@ -1,0 +1,9 @@
+@import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
+@import url('./components/nav.css');
+@import url('./components/poster.css');
+@import url('./components/button.css');
+@import url('./components/card-horizontal.css');
+@import url('./components/card-vertical.css');
+@import url('./components/footer.css');
+@import url('./components/grids.css');
+@import url('./style.css');
