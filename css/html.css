@@ -27,27 +27,42 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .contenedor-cards {
 
-    grid-template-columns: 1fr;
+/* Cartelera de las peliculas */
+.contenedor-cards {
 
-    grid-template-areas:
-        "peli1"
-        "peli2"
-        "peli3"
-        "peli4"
-        "peli5"
-        "peli6";
+grid-template-columns: 1fr;
 
-        gap: 20px;
-    }
+grid-template-areas:
+    "peli1"
+    "peli2"
+    "peli3"
+    "peli4"
+    "peli5"
+    "peli6";
 
-.footer-index {
-        font-size: 12px; 
-        padding: 20px 10px; 
-        height: auto;
-        display: block
-    }
+    gap: 20px;
 }
 
+/* Footer */
+.footer-index {
+    font-size: 12px; 
+    padding: 20px 10px; 
+    height: auto;
+    display: block
+}
+
+/* Nav */
+.header-principal {
+    flex-direction: column;
+    padding: 12px 16px;
+}
+
+.header-nav nav {
+    position: static;
+    transform: none;
+    flex-wrap: wrap;
+}
+
+}
 /* FIN INDEX.HTML*/
