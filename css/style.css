@@ -49,3 +49,13 @@
   box-sizing: border-box;
 }
 
+/* DETALLE.HTML */
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: sans-serif;
+}
+a {
+  color: var(--color-texto);
+  text-decoration: none;
+}
