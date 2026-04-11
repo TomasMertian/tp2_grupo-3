@@ -11,8 +11,16 @@
 .titulo-pagina h1{
     justify-content: center;
     text-align: center;
-    margin-top: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+    
+    color: var(--color-texto-suave);
 }
 
-
+body, main, .page-index {
+    background-color: var(--color-superficie) !important;
+    color: white; 
+}
 

@@ -1,6 +1,6 @@
 .grilla-peliculas{
   height: 800px;
-  gap: 15px;
+  gap: 40px;
   
   display: grid;
   grid-auto-columns: 200px 100px;
@@ -18,7 +18,9 @@
   
 }
 
-.pelicula-1 { grid-area: pelicula-1; }
+.pelicula-1 { grid-area: pelicula-1; 
+    background-image: url("../assets/img/poster-1.png");
+}
 .pelicula-2 { grid-area: pelicula-2; }
 .pelicula-3 { grid-area: pelicula-3; }
 .pelicula-4 { grid-area: pelicula-4; }
@@ -26,5 +28,7 @@
 .pelicula-6 { grid-area: pelicula-6; }
 
 .pelicula {
-    background-color: var(--color-fondo);
-    border: 1px solid #000;}
+    background-color: var(--color-primario);
+    border: 1px solid #000;
+    margin: start;
+}

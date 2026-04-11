@@ -1,4 +1,6 @@
 .footer{
     text-align: center;
-    background-color: var(--color-texto-suave);
+    background-color: var(--color-fondo);
+    text-decoration: underline;
+    color: aliceblue;
 }
