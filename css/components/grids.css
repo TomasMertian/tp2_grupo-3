@@ -17,10 +17,6 @@
     "pelicula-3 pelicula-2 pelicula-1";
   
 }
-
-.pelicula-1 { grid-area: pelicula-1; 
-    background-image: url("../assets/img/poster-1.png");
-}
 .pelicula-2 { grid-area: pelicula-2; }
 .pelicula-3 { grid-area: pelicula-3; }
 .pelicula-4 { grid-area: pelicula-4; }
