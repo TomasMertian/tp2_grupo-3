@@ -1,7 +1,22 @@
 .grilla-peliculas{
-  display: flex;
+  height: 800px;
   gap: 15px;
+  
+  display: grid;
+  grid-auto-columns: 200px 100px;
+  grid-auto-rows: 200px 50px;
+
   justify-content: center;
   align-items: center;
-  height: 100vh;
+
+  grid-template-areas: "pelicula-6 pelicula-3 pelicula-2 pelicula-1";
+  
+}
+
+.pelicula{
+  background-color: var(--color-fondo);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
 }
