@@ -6,3 +6,13 @@
 @import url(./components/card-vertical.css);
 @import url(./components/footer.css);
 @import url(./components/grids.css);
+
+
+.titulo-pagina h1{
+    justify-content: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+
