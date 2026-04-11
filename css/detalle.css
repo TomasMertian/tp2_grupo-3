@@ -1,0 +1,172 @@
+@import url(./components/poster.css); 
+@import url('./components/nav.css');
+@import url('./components/button.css');
+@import url('./components/footer.css');
+@import url('./style.css');
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: var(--color-superficie);
+    border-bottom: 2px solid var(--color-primario);
+}
+
+header div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header h1 {
+    color: var(--color-primario);
+    font-size: 1.5rem;
+}
+
+header img {
+    height: 40px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: var(--color-secundario);
+}
+
+/* --- CUERPO Y CONTENIDO --- */
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.detalle-pelicula {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seccion del poster */
+.poster-pelicula {
+    flex: 1;
+    max-width: 350px;
+}
+
+.poster-pelicula img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* informacion de la pelicula */
+.info-pelicula {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.titulo-pelicula {
+    color: var(--color-primario);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo-pelicula {
+    color: var(--color-texto-suave);
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* titulos de sinopsis y horarios */
+.descripcion-pelicula h3,
+.horarios-pelicula h3 {
+    color: var(--color-secundario);
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.descripcion-pelicula p {
+    line-height: 1.6;
+}
+
+.datos-pelicula p {
+    margin-bottom: 0.5rem;
+}
+
+.datos-pelicula strong {
+    color: var(--color-secundario);
+}
+
+/* estilos para los horarios */
+.horarios-pelicula ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.horarios-pelicula li {
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    border: 1px solid var(--color-texto-suave);
+    transition: all 0.3s ease;
+}
+
+.horarios-pelicula li:hover {
+    background-color: var(--color-primario);
+    border-color: var(--color-primario);
+    cursor: pointer;
+}
+
+.puntuacion-pelicula p {
+    color: var(--color-secundario);
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+/* para tablets y celulares */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 10px;
+    }
+
+    .detalle-pelicula {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 1rem;
+        gap: 2rem;
+    }
+
+    .poster-pelicula {
+        max-width: 80%;
+    }
+
+    .info-pelicula {
+        align-items: center;
+        text-align: center;
+    }
+
+    .horarios-pelicula ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
