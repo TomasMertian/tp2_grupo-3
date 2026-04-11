@@ -13,10 +13,4 @@
   
 }
 
-.pelicula{
-  background-color: var(--color-fondo);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 48px;
-}
+.pelicula{}
