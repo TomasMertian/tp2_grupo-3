@@ -60,3 +60,16 @@ padding-bottom: 6px;
 .perfil-datos strong {
 color: #f8fafc;
 }
+.peliculas-titulo{
+color:  #f59e0b;
+margin-bottom: 10px;
+}
+
+.peliculas-lista li{
+color:  white;
+margin: 10px 0;
+font-size: 15px;
+display: flex;
+border-bottom: 1px solid  #94a3b8;
+padding-bottom: 6px;
+}
