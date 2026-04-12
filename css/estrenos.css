@@ -8,7 +8,7 @@
 @import url(./components/grids.css);
 
 
-.titulo-pagina h1{
+.titulo-pagina-estrenos h1{
     justify-content: center;
     text-align: center;
     margin-top: 20px;
@@ -24,21 +24,21 @@ body, main, .page-index {
     color: white; 
 }
 
-.titulo-pelicula{
+.titulo-pelicula-estrenos h4 {
     color: var(--color-texto);
     background-color: var(--color-primario);
     border: 1px solid var(--color-primario);
     text-decoration: underline;
 }
 
-.fecha-pelicula{
+.fecha-pelicula-estrenos{
     color: var(--color-texto);
     text-decoration:underline;
     background-color: var(--color-primario);
     border: 1px solid var(--color-primario);
 }
 
-.poster-pelicula img {
+.poster-pelicula-estrenos img {
     width: 100%;
     height: auto;
     border-radius: 8px;

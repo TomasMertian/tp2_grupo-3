@@ -1,4 +1,4 @@
-.grilla-peliculas{
+.grilla-peliculas-estrenos {
   height: 800px;
   gap: 40px;
   
@@ -17,13 +17,14 @@
     "pelicula-3 pelicula-2 pelicula-1";
   
 }
-.pelicula-2 { grid-area: pelicula-2; }
-.pelicula-3 { grid-area: pelicula-3; }
-.pelicula-4 { grid-area: pelicula-4; }
-.pelicula-5 { grid-area: pelicula-5; }
-.pelicula-6 { grid-area: pelicula-6; }
+.pelicula-1-estrenos { grid-area: pelicula-1; }
+.pelicula-2-estrenos { grid-area: pelicula-2; }
+.pelicula-3-estrenos { grid-area: pelicula-3; }
+.pelicula-4-estrenos { grid-area: pelicula-4; }
+.pelicula-5-estrenos { grid-area: pelicula-5; }
+.pelicula-6-estrenos { grid-area: pelicula-6; }
 
-.pelicula {
+.pelicula-estrenos {
     background-color: var(--color-primario);
     border: 1px solid #000;
     margin: start;
