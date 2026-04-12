@@ -37,3 +37,18 @@
 }
 
 /* FIN - CARD index - vertical*/
+.tarjeta-vert-estrenos{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    height: 350px; 
+    border-radius: 8px;
+    color: white;
+}
+ 
