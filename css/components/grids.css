@@ -30,7 +30,7 @@
 
 /* FIN grids del index */
 /* FIN grids del index */
-@media only screen and (max-width: 600px){
+
 
     .grilla-peliculas-estrenos {
         height: auto;
@@ -62,4 +62,3 @@
         margin: start;
     }
 
-}

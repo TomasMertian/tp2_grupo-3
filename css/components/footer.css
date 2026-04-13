@@ -9,12 +9,10 @@
     padding: 24px 0;
     position: relative;
 }
-@media only screen and (max-width: 600px){
 
-    .footer-estrenos{
-        text-align: center;
-        background-color: var(--color-fondo);
-        text-decoration: underline;
-        color: aliceblue;
-    }
+.footer-estrenos{
+    text-align: center;
+    background-color: var(--color-fondo);
+    text-decoration: underline;
+    color: aliceblue;
 }

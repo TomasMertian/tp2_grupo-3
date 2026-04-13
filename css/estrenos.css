@@ -8,7 +8,6 @@
 @import url(./components/grids.css);
 
 
-
 .titulo-pagina-estrenos h1{
     justify-content: center;
     text-align: center;
@@ -25,24 +24,66 @@ body, main, .page-index {
     color: white; 
 }
 
-.titulo-pelicula-estrenos h4 {
-    color: var(--color-texto);
-    background-color: var(--color-primario);
-    border: 1px solid var(--color-primario);
-    text-decoration: underline;
-}
 
-.fecha-pelicula-estrenos{
-    color: var(--color-texto);
-    text-decoration:underline;
-    background-color: var(--color-primario);
-    border: 1px solid var(--color-primario);
-}
+    .titulo-pelicula-estrenos h4 {
+        color: var(--color-texto);
+        background-color: var(--color-primario);
+        border: 1px solid var(--color-primario);
+        text-decoration: underline;
+    }
 
-.poster-pelicula-estrenos img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    border-color: var(--color-superficie);
+    .fecha-pelicula-estrenos{
+        color: var(--color-texto);
+        text-decoration:underline;
+        background-color: var(--color-primario);
+        border: 1px solid var(--color-primario);
+    }
+
+    .poster-pelicula-estrenos img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        border-color: var(--color-superficie);
+    }
+@media only screen and (max-width: 600px){
+    .grilla-peliculas-estrenos {
+        height: auto;
+        display: grid;
+        grid-auto-columns: 200px 100px;
+        grid-auto-rows: 200px 50px;
+        
+        justify-content: center;
+        align-items: center;
+        
+        grid-template-columns: repeat(3,200px);
+        grid-template-rows: repeat(2,350px);
+
+        grid-template-areas: 
+            "pelicula-6 pelicula-5 pelicula-4"
+            "pelicula-3 pelicula-2 pelicula-1";
+  
+    }
+    .pelicula-1-estrenos { grid-area: pelicula-1; }
+    .pelicula-2-estrenos { grid-area: pelicula-2; }
+    .pelicula-3-estrenos { grid-area: pelicula-3; }
+    .pelicula-4-estrenos { grid-area: pelicula-4; }
+    .pelicula-5-estrenos { grid-area: pelicula-5; }
+    .pelicula-6-estrenos { grid-area: pelicula-6; }
+
+    .footer-estrenos{
+        text-align: center;
+        background-color: var(--color-fondo);
+        text-decoration: underline;
+        color: aliceblue;
+    }
+
+    .header-nav nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 24px; 
+        align-items: center;
+        margin: 0;
+    }
 }
-@media only screen and (max-width: 600px)
