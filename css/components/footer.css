@@ -1,0 +1,18 @@
+.footer-index {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    padding: 24px 0;
+    position: relative;
+}
+
+.footer-estrenos{
+    text-align: center;
+    background-color: var(--color-fondo);
+    text-decoration: underline;
+    color: aliceblue;
+}

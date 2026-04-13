@@ -1,0 +1,175 @@
+@import url('./components/nav.css');
+@import url('./components/button.css');
+@import url('./components/footer.css');
+@import url('./style.css');
+
+/* CONTENEDOR GENERAL*/
+.registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: calc(100vh - 160px);
+    background-color: var(--color-fondo);
+    padding: 32px;
+    gap: 24px;
+}
+
+/*  CARD */
+.registro-card {
+    width: 100%;
+    max-width: 500px;
+
+    background-color: var(--color-superficie);
+    padding: 40px;
+    border-radius: 8px;
+
+    border-top: 4px solid var(--color-primario);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* FORMULARIO*/
+.registro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.registro-form h2 {
+    color: var(--color-texto);
+    text-align: center;
+    margin-bottom: 10px;
+    animation: brillo-titulo 1s ease-out forwards;
+}
+
+/* animacion*/
+@keyframes brillo-titulo {
+    from {
+        letter-spacing: -2px;
+        opacity: 0;
+    }
+    to {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+/* CAMPOS */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    color: var(--color-texto-suave);
+    font-size: 14px;
+}
+
+.registro-input,
+.form-group input[type="date"],
+.form-group input[type="color"],
+.form-group input[type="range"],
+.form-group select {
+    padding: 12px;
+    border-radius: 4px;
+
+    border: 1px solid var(--color-texto-suave);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+
+    transition: all 0.3s ease;
+}
+
+/* focus */
+.registro-input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: var(--color-primario);
+    box-shadow: 0 0 8px rgba(225, 29, 72, 0.4);
+}
+
+/* RADIO BUTTONS */
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 6px;
+}
+
+.radio-group label {
+    color: var(--color-texto-suave);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.radio-group input {
+    margin-right: 6px;
+}
+
+/* EXTRA SECTION*/
+.registro-extra {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.registro-extra-texto h3 {
+    color: var(--color-texto);
+    font-size: 18px;
+}
+
+.registro-extra-texto p {
+    color: var(--color-texto-suave);
+    font-size: 14px;
+}
+
+.registro-extra-campos {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* ACCIONES */
+.registro-acciones {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.registro-boton {
+    background-color: var(--color-secundario);
+    color: white;
+
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.registro-boton:hover {
+    background-color: var(--color-primario);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3);
+}
+
+.registro-boton:active {
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .registro {
+        padding: 16px;
+    }
+
+    .registro-card {
+        padding: 24px;
+    }
+}

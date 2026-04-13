@@ -7,6 +7,8 @@
     <meta name="description" content="Cine Aurora - Detalle de la película." />
     <link rel="icon" href="../assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/detalle.css" />
+    
   </head>
   <body>
     <header>
@@ -24,59 +26,55 @@
     </header>
 
     <main>
-      <section>
-        <div>
-          <img src="../assets/img/poster-1.png" alt="Póster" />
+      <section class="detalle-pelicula">
+        <div class="poster-pelicula">
+          <img src="../assets/img/poster-1.png" alt="Póster de la película" />
         </div>
-        <div>
-          <div>
-            <h1>Título</h1>
-            <h2>Lorem ipsum, dolor sit.</h2>
+
+        <div class="info-pelicula">
+          <div class="encabezado-pelicula">
+            <h2 class="titulo-pelicula">El diablo viste de Prada 2</h2>
+            <p class="subtitulo-pelicula">Comedia dramática</p>
           </div>
-          <div>
+
+          <div class="descripcion-pelicula">
             <h3>Sinopsis</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              ullam ipsum corporis quidem, assumenda magni officia recusandae.
-              Tenetur voluptatem architecto, dolores eius, deleniti quam
-              voluptatibus laboriosam ut recusandae animi quisquam!
+              Años después de su experiencia en el mundo de la moda, Andy Sachs se
+              reencuentra con Miranda Priestly en un contexto completamente distinto.
+              Nuevos desafíos profesionales y personales pondrán a prueba su crecimiento,
+              en una historia que combina ambición, estilo y decisiones difíciles.
             </p>
           </div>
-          <div>
-            <h3>Duración</h3>
-            <p>155 minutos</p>
+
+          <div class="datos-pelicula">
+            <p><strong>Duración:</strong> 120 minutos</p>
+            <p><strong>Género:</strong> Comedia dramatica</p>
+            <p><strong>Dirección:</strong> David Frankel</p>
+            <p><strong>Clasificación:</strong> Apta para mayores de 13 años</p>
           </div>
 
-          <div>
-            <h3>Género</h3>
-            <p>Ciencia ficción</p>
+          <div class="horarios-pelicula">
+            <h3>Horarios</h3>
+            <ul>
+              <li>16:00</li>
+              <li>19:00</li>
+              <li>22:00</li>
+            </ul>
           </div>
 
-          <div>
-            <h3>Director</h3>
-            <p>John Doe</p>
-          </div>
-
-          <div>
-            <h3>Clasificación</h3>
-            <p>+13</p>
-          </div>
-          <div>
-            <h3>Horarios:</h3>
-            <p>16:00</p>
-            <p>19:00</p>
-            <p>22:00</p>
-          </div>
-          <div>
+          <div class="puntuacion-pelicula">
             <p>Puntuación: ★★★★☆</p>
           </div>
-          <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+
+          <div class="acciones-pelicula">
+            <button
+              class="boton-comprar"
+              onclick="alert('Lo sentimos, en este momento no funciona nuestro sistema')"
+            >
+              Comprar entradas
+            </button>
+          </div>
         </div>
       </section>
     </main>

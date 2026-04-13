@@ -1,0 +1,68 @@
+@import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
+@import url('./components/nav.css');
+@import url('./components/poster.css');
+@import url('./components/button.css');
+@import url('./components/card-horizontal.css');
+@import url('./components/card-vertical.css');
+@import url('./components/footer.css');
+@import url('./components/grids.css');
+@import url('./style.css');
+
+/* INICIO INDEX.HTML*/
+
+.page-index{
+    background-color: var(--color-superficie);
+}
+
+.cartelera {
+    padding-top: 32px;
+}
+
+.cartelera h2 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 8px;
+    background-color: var(--color-superficie);
+    color: var(--color-texto);
+}
+
+@media only screen and (max-width: 600px) {
+
+/* Cartelera de las peliculas */
+.contenedor-cards {
+
+grid-template-columns: 1fr;
+
+grid-template-areas:
+    "peli1"
+    "peli2"
+    "peli3"
+    "peli4"
+    "peli5"
+    "peli6";
+
+    gap: 20px;
+}
+
+/* Footer */
+.footer-index {
+    font-size: 12px; 
+    padding: 20px 10px; 
+    height: auto;
+    display: block
+}
+
+/* Nav */
+.header-principal {
+    flex-direction: column;
+    padding: 12px 16px;
+}
+
+.header-nav nav {
+    position: static;
+    transform: none;
+    flex-wrap: wrap;
+}
+
+}
+/* FIN INDEX.HTML*/

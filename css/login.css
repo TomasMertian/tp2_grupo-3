@@ -1,0 +1,133 @@
+@import url('./components/nav.css');
+@import url('./components/button.css');
+@import url('./components/footer.css');
+@import url('./style.css');
+
+/* -- LAYOUT PRINCIPAL (Flexbox) -- */
+.contenedor-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 160px); /*(el vh es viewport height) el 100 es para que el color ocupe toda la pantalla)*/
+    background-color: var(--color-fondo);
+    padding: 32px;
+}
+
+/* --BLOQUE (Grid)-- */
+.login-card {
+    background-color: var(--color-superficie);
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 24px;
+
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    border-top: 4px solid var(--color-primario);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* Animación sobre el titulo */
+@keyframes brillo-titulo{
+    from{
+        letter-spacing: -2px; /*Letras muy juntas*/
+        opacity: 0; /*Letras invisibles*/
+    }
+    to {
+        letter-spacing: normal; /*Espaciado normal*/
+        opacity: 1; /*Totalmente visible*/
+    }
+}
+
+.login-titulo{
+    color: var(--color-texto);
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 4px;
+    animation: brillo-titulo 1s ease-out forwards;
+    animation-delay: 0.3s; 
+}
+
+/* -- ESTILO DE CAMPOS E INTERACTIVIDAD --*/
+.campo-formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 8px; 
+}
+
+.campo-formulario label{
+    color:var(--color-texto-suave);
+    font-size: 14px;
+}
+
+.campo-formulario input{
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid var(--color-texto-suave);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    transition: all 0.3 ease;
+}
+
+.campo-formulario input:focus{
+    outline: none;
+    border-color: var(--color-primario);
+    box-shadow: 0 0 8px rgba(225, 29, 72, 0.4);
+    background-color: rgba(225, 29, 72, 0.05);
+}
+
+.campo-formulario input:placeholder{
+    color: var(--color-texto-suave);
+    opacity: 0.6;
+    font-size: 14px;
+}
+
+.link-registro{
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-texto-suave);
+}
+
+.link-registro a{
+    color: var(--color-secundario);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* -- RESPONSIVE (cambio de dispositivo)--*/
+
+@media (max-width: 480px) {
+    .contenedor-login{
+        padding: 16px
+    }
+
+    .login-card{
+        padding: 24px;
+    }
+}
+
+/* -- AGREGADOS DE estilos e interacción-- */
+
+.btn-ver-mas{
+    background-color: var(--color-secundario);
+    color: white;
+    transition: all 0.3 ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-ver-mas:hover {
+    background-color: var(--color-primario); /*Al pasar el mouse se tiñe de otro color*/
+    transform: translateY(-2px); /* Hace que cuando se pase el mouse por arriba haga como un pequeño salto hacia arriba*/
+    box-shadow: 0 4px 12px rgba(225, 29, 72, 0.3); /*Le da un brillo rosa*/
+}
+
+/*Cuando hago click en el botón*/
+.btn-ver-mas:active{
+    background-color: #900c3f; /*Es un color más oscuro cuando se hace click*/
+    transform: translateY(0); /*Vuelve a su lugar*/
+}
+
+
+
