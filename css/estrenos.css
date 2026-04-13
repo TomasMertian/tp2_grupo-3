@@ -8,6 +8,7 @@
 @import url(./components/grids.css);
 
 
+
 .titulo-pagina-estrenos h1{
     justify-content: center;
     text-align: center;
@@ -44,3 +45,4 @@ body, main, .page-index {
     border-radius: 8px;
     border-color: var(--color-superficie);
 }
+@media only screen and (max-width: 600px)
