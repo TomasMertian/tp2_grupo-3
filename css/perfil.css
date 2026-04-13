@@ -1,0 +1,75 @@
+@import url('./components/nav.css');
+@import url('./components/footer.css');
+@import url('./style.css');
+
+
+body {
+background-color: #0f172a;
+}
+
+.contenedor-perfil {
+max-width: 900px;     
+margin: 30px auto;    
+padding: 20px;
+}
+
+.contenedor-perfil h1 {
+color:#f8fafc;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.contenedor-perfil section {
+display: flex;
+gap: 20px;
+background-color: #1e293b;
+border-radius: 15px;
+padding: 25px;
+margin-bottom: 25px;
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.perfil-foto {
+background-color:#e11d48;
+border-radius: 10px;
+padding: 20px;
+margin-bottom: 20px;
+}
+
+.perfil-foto h2 {
+margin-top: 10px;
+font-size: 18px;
+color: white;
+}
+
+.perfil-foto img {
+width: 120px;
+height: 120px;
+border-radius: 50%; /* redonda */
+object-fit: cover;
+
+}
+.perfil-datos p {
+color:  #94a3b8;
+margin: 10px 0;
+font-size: 15px;
+display: flex;
+border-bottom: 1px solid #eee;
+padding-bottom: 6px;
+}
+.perfil-datos strong {
+color: #f8fafc;
+}
+.peliculas-titulo{
+color:  #f59e0b;
+margin-bottom: 10px;
+}
+
+.peliculas-lista li{
+color:  white;
+margin: 10px 0;
+font-size: 15px;
+display: flex;
+border-bottom: 1px solid  #94a3b8;
+padding-bottom: 6px;
+}
