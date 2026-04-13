@@ -12,7 +12,7 @@
   <body>
     <header class="header">
       <div class="header-top">
-        <h1 class="'logo">Cine Aurora</h1>
+        <h1 class="logo">Cine Aurora</h1>
         <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
 
@@ -26,28 +26,28 @@
 
     <main class="registro">
       <div class="registro-card">
-        <form action="login.html">
+        <form class="registro-form" action="login.html">
           <h2>Crear nueva cuenta</h2>
           <div class="form-group">
-            <label>Nombre Completo</label>
-            <input class="registro-input" type="text" required />
+            <label for="nombre">Nombre Completo</label>
+            <input id="nombre" name="nombre" class="registro-input" type="text" required />
           </div>
           <div class="form-group">
-            <label>Email</label>
-            <input class="registro-input" type="email" required />
+            <label for="email">Email</label>
+            <input id="email" name="email" class="registro-input" type="email" required />
           </div>
           <div class="form-group">
-            <label>Fecha de nacimiento</label>
-            <input class="registro-input" type="date" required />
+            <label for="fecha">Fecha de nacimiento</label>
+            <input id="fecha" name="fecha" class="registro-input" type="date" required />
           </div>
           <div class="form-group">
-            <label>Contraseña</label>
-            <input class="registro-input" type="password" required />
+            <label for="password">Contraseña</label>
+            <input id="password" name="password" class="registro-input" type="password" required />
           </div>
 
           <div class="form-group">
-            <label>Confirmar contraseña</label>
-            <input class="registro-input" type="password" required />
+            <label for="confirmar">Confirmar contraseña</label>
+            <input id="confirmar" name="confirmar" class="registro-input" type="password" required />
           </div>
 
           <hr />
@@ -59,20 +59,20 @@
             </div>
             <div class="registro-extra-campos">
               <div class="form-group">
-                <label>Elegí tu color favorito para las butacas</label>
-                <input type="color" />
+                <label for="color">Elegí tu color favorito para las butacas</label>
+                <input id="color" name="color" type="color" />
               </div>
 
               <div class="form-group">
-                <label
+                <label for="entradas"
                   >¿Cuántas entradas comprás en general? Min: 0 | Max: 10</label
                 >
-                <input type="range" min="0" max="10" />
+                <input id="entradas" name="entradas" type="range" min="0" max="10" />
               </div>
 
               <div class="form-group">
-                <label>Seleccioná tu género favorito</label>
-                <select>
+                <label for="genero">Seleccioná tu género favorito</label>
+                <select id="genero" name="genero">
                   <option>Acción</option>
                   <option>Drama</option>
                   <option>Ciencia ficción</option>
@@ -86,13 +86,14 @@
                 <label>Elegí tu snack favorito</label>
 
                 <div class="radio-group">
-                  <label><input type="radio" name="snack" /> Pochoclo dulce</label>
-                  <label><input type="radio" name="snack" /> Pochoclo salado</label>
-                  <label><input type="radio" name="snack" /> Chocolate</label>
-                  <label><input type="radio" name="snack" /> Frutos secos</label>
+                  <label><input type="radio" name="snack" value="dulce"/> Pochoclo dulce</label>
+                  <label><input type="radio" name="snack" value="salado"/> Pochoclo salado</label>
+                  <label><input type="radio" name="snack" value="chocolate"/> Chocolate</label>
+                  <label><input type="radio" name="snack" value="frutos-secos"/> Frutos secos</label>
                 </div>
               </div>
           </div>
+          </section>
 
           <div class="registro-acciones">
             <button class="registro-boton" type="submit">Regístrate</button>
